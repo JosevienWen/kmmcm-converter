@@ -1,0 +1,28 @@
+.container-box {
+    background-color: black;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.name {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.inputsatuan {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.km {
+    background-color: lightseagreen;
+    width: auto;
+}
+.m {
+    background-color: green;
+}
+.cm {
+    background-color: red;
+}
