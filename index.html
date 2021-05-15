@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Konversi Satuan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container-box">
+    <h1 class="name">Konversi Satuan</h1>
+    <label for="inputNumber" class="inputsatuan">KM : </label>
+    <input type="number" name="inputNumber" placeholder="input number" oninput="konversisatuan(this.value)">
+    <p class="km">KM: <br><span id="outputkm"></span></p>
+    <p class="m">M: <br><span id="outputm"></span></p>
+    <p class="cm">CM: <br><span id="outputcm"></span></p>
+
+    <script>
+        function konversisatuan(valueNumber){
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputkm").innerHTML=
+            (valueNumber+0)
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputm").innerHTML=
+            (valueNumber*1000)
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputcm").innerHTML=
+            (valueNumber*100000)
+        }
+    </script>
+    </div>
+
 </body>
 </html>
