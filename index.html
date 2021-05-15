@@ -16,6 +16,19 @@
     <p class="m">M: <br><span id="outputm"></span></p>
     <p class="cm">CM: <br><span id="outputcm"></span></p>
 
+    <label for="inputNumber" class="inputsatuan">M : </label>
+    <input type="number" name="inputNumber" placeholder="input number" oninput="konversisatuan1(this.value)">
+    <p class="km">KM: <br><span id="outputkm1"></span></p>
+    <p class="m">M: <br><span id="outputm1"></span></p>
+    <p class="cm">CM: <br><span id="outputcm1"></span></p>
+
+    <label for="inputNumber" class="inputsatuan">CM : </label>
+    <input type="number" name="inputNumber" placeholder="input number" oninput="konversisatuan2(this.value)">
+    <p class="km">KM: <br><span id="outputkm2"></span></p>
+    <p class="m">M: <br><span id="outputm2"></span></p>
+    <p class="cm">CM: <br><span id="outputcm2"></span></p>
+
+
     <script>
         function konversisatuan(valueNumber){
 
@@ -30,6 +43,36 @@
             valueNumber = parseFloat(valueNumber);
             document.getElementById("outputcm").innerHTML=
             (valueNumber*100000)
+        }
+
+        function konversisatuan1(valueNumber){
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputkm1").innerHTML=
+            (valueNumber/1000)
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputm1").innerHTML=
+            (valueNumber+0)
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputcm1").innerHTML=
+            (valueNumber*100)
+        }
+
+        function konversisatuan2(valueNumber){
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputkm2").innerHTML=
+            (valueNumber/100000)
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputm2").innerHTML=
+            (valueNumber/100)
+
+            valueNumber = parseFloat(valueNumber);
+            document.getElementById("outputcm2").innerHTML=
+            (valueNumber+0)
         }
     </script>
     </div>
